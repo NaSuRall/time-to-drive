@@ -2,37 +2,36 @@ export default function Footer() {
 
     return (
         <footer className="bg-black text-gray-200 py-10 border-t-6 border-green-500">
-        <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between gap-10">
+        <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between gap-8">
 
-            {/* Logo et description */}
-            <div className="flex flex-col gap-4">
+            {/* Logo et description - caché sur petit écran */}
+            <div className="hidden md:flex flex-col gap-4 max-w-xs">
             <h2 className="text-2xl font-bold text-white">Time To Drive</h2>
-            <p className="text-gray-400 max-w-xs">
+            <p className="text-gray-400">
                 Découvrez nos produits et services de qualité. Suivez-nous sur nos réseaux pour ne rien manquer.
             </p>
             </div>
 
-            {/* Liens utiles */}
-            <div className="flex flex-col gap-2">
+            {/* Liens utiles - réduit sur mobile */}
+            <div className="hidden sm:flex flex-col gap-2">
             <h3 className="font-semibold text-white mb-2">Liens utiles</h3>
             <a href="#" className="hover:text-white transition-colors">Accueil</a>
             <a href="#" className="hover:text-white transition-colors">Produits</a>
             <a href="#" className="hover:text-white transition-colors">À propos</a>
             <a href="#" className="hover:text-white transition-colors">Contact</a>
+            <a href="/politique-confidentialite" className="hover:text-white transition-colors">Politique de confidentialité</a>
             </div>
 
-            {/* Nous Contacter */}
+            {/* Nous Contacter - visible partout */}
             <div className="flex flex-col gap-2">
-                <h3 className="font-semibold text-white transition-colors">Nous Contacter</h3>
+                <h3 className="font-semibold text-white">Nous Contacter</h3>
                 <div className="text-white">Email: Contact@time-to-drive.com</div>
                 <div className="text-white">Téléphone: +33 6 17 92 66 66</div>
-
-
             </div>
 
 
-            {/* Réseaux sociaux */}
-            <div className="flex flex-col gap-2">
+            {/* Réseaux sociaux - cachés sur très petits écrans */}
+            <div className="hidden sm:flex flex-col gap-2">
             <h3 className="font-semibold text-white mb-2">Suivez-nous</h3>
             <div className="flex gap-4">
                 <a href="#" className="hover:text-white transition-colors">
