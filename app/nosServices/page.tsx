@@ -1,6 +1,12 @@
 import Navbar from "../components/navbar"
 import Footer from "../components/footer"
+import Image from "next/image"
 import { CarFront, MapPinPlusInside, BadgeDollarSign, ArrowDownUp } from "lucide-react"
+
+export const metadata = {
+    title: "Nos Services — Time To Drive",
+    description: "Découvrez les services Time To Drive : reprise, dépôt-vente, covering, importation et recherche personnalisée.",
+};
 
 
 export default function nosServices(){
@@ -35,7 +41,7 @@ export default function nosServices(){
 
                             <div className="flex gap-6 justify-center items-center p-2">
                                 <div className="relative w-full h-40 md:h-[420px] overflow-hidden bg-gray-900 rounded-xl shadow-lg">
-                                    <img src="/img/miniVert.jpg" alt="" className="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+                                    <Image src="/img/miniVert.jpg" alt="Mini Cooper verte - Time To Drive" fill className="object-cover hover:scale-110 transition-transform duration-300" />
                                 </div>
                             </div>
                         </div>
@@ -48,7 +54,7 @@ export default function nosServices(){
                             
                             <div className="flex gap-6 justify-center items-center p-2">
                                 <div className="relative w-full h-40 md:h-[420px] overflow-hidden bg-gray-900 rounded-xl shadow-lg">
-                                    <img src="/img/alpineVert.jpg" alt="alpine" className="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+                                    <Image src="/img/alpineVert.jpg" alt="Alpine verte - Time To Drive" fill className="object-cover hover:scale-110 transition-transform duration-300" />
                                 </div>
                             </div>
                             <div className="p-6 flex flex-col justify-center items-start gap-4">
@@ -75,13 +81,13 @@ export default function nosServices(){
 
                             <div className="flex gap-6 justify-center items-center p-2">
                                 <div className="relative w-full h-40 md:h-[420px] overflow-hidden bg-gray-900 rounded-xl shadow-lg">
-                                    <img src="/img/depot1.jpg" alt="" className="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+                                    <Image src="/img/depot1.jpg" alt="Véhicule en présentation - Time To Drive" fill className="object-cover hover:scale-110 transition-transform duration-300" />
                                 </div>
                             </div>
 
                             <div className="flex gap-6 justify-center items-center p-2">
                                 <div className="relative w-full h-40 md:h-[420px] overflow-hidden bg-gray-900 rounded-xl shadow-lg">
-                                    <img src="/img/miniVert.jpg" alt="" className="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+                                    <Image src="/img/miniVert.jpg" alt="Mini Cooper verte - Time To Drive" fill className="object-cover hover:scale-110 transition-transform duration-300" />
                                 </div>
                             </div>
                             <div className="p-6 flex flex-col justify-center items-start gap-4">
@@ -106,7 +112,7 @@ export default function nosServices(){
                             </div>
                             <div className="flex gap-6 justify-center items-center p-2">
                                 <div className="relative w-full h-40 md:h-[420px] overflow-hidden bg-gray-900 rounded-xl shadow-lg">
-                                    <img src="/img/depotVenteHeader.jpg" alt="" className="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+                                    <Image src="/img/depotVenteHeader.jpg" alt="Voiture en dépôt-vente - Time To Drive" fill className="object-cover hover:scale-110 transition-transform duration-300" />
                                 </div>
                             </div>
 

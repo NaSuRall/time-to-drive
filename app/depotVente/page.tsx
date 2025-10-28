@@ -1,5 +1,11 @@
 import Navbar from "../components/navbar"
 import Footer from "../components/footer"
+import Image from "next/image"
+
+export const metadata = {
+  title: "Dépôt-vente — Time To Drive",
+  description: "Déposez votre véhicule en dépôt-vente chez Time To Drive : inspection, mise en ligne, gestion des ventes et paiement sécurisé.",
+};
 
 export default function depotVente() {
     return (
@@ -73,22 +79,22 @@ export default function depotVente() {
                     <div className="flex flex-col items-center w-full bg-black p-4 md:p-8">
                         <h2 className="text-2xl md:text-4xl text-white">Nos depot deja vendu :</h2>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-6 px-4 md:px-8">
-                           <div>
-                              <img src="/img/depot1.jpg" alt="Dépot Vente 1" className="w-full h-48 md:h-40 object-cover rounded-lg" />
-                              <h3 className="text-lg md:text-xl mt-2 text-white">Renault Clio 2015</h3>                            
+                           <div className="relative w-full h-48 md:h-40">
+                              <Image src="/img/depot1.jpg" alt="Renault Clio 2015" fill className="object-cover rounded-lg" />
+                              <h3 className="text-lg md:text-xl mt-2 text-white">Renault Clio 2015</h3>
                            </div>
-                            <div>
-                              <img src="/img/depot2.jpg" alt="Dépot Vente 2" className="w-full h-48 md:h-40 object-cover rounded-lg" />
+                            <div className="relative w-full h-48 md:h-40">
+                              <Image src="/img/depot2.jpg" alt="Peugeot 208 2018" fill className="object-cover rounded-lg" />
                               <h3 className="text-lg md:text-xl mt-2 text-white">Peugeot 208 2018</h3>
                             </div>
 
-                            <div>
-                              <img src="/img/alpineVert.jpg" alt="Dépot Vente 3" className="w-full h-48 md:h-40 object-cover rounded-lg" />
+                            <div className="relative w-full h-48 md:h-40">
+                              <Image src="/img/alpineVert.jpg" alt="Citroën C3 2017" fill className="object-cover rounded-lg" />
                               <h3 className="text-lg md:text-xl mt-2 text-white">Citroën C3 2017</h3>
                             </div>
 
-                            <div>
-                              <img src="/img/depot4.jpg" alt="Dépot Vente 4" className="w-full h-48 md:h-40 object-cover rounded-lg" />
+                            <div className="relative w-full h-48 md:h-40">
+                              <Image src="/img/depot4.jpg" alt="Ford Fiesta 2016" fill className="object-cover rounded-lg" />
                               <h3 className="text-lg md:text-xl mt-2 text-white">Ford Fiesta 2016</h3>
                             </div>
 

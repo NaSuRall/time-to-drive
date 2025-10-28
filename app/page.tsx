@@ -2,6 +2,11 @@ import Image from "next/image";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 
+export const metadata = {
+  title: "Time To Drive — Accueil",
+  description: "Time To Drive - Vente, reprise et dépôt-vente de véhicules haut de gamme. Estimation rapide et paiement sécurisé.",
+};
+
 
 export default function Home() {
   return (
@@ -23,9 +28,9 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full p-2 md:p-5">
           <div className="flex gap-6 justify-center items-center bg-black p-2 md:p-6">
 
-            <div className="relative w-full h-64 md:h-[550px] overflow-hidden transform-gpu bg-gray-900 rounded-xl shadow-lg">
-              <img src="/img/trophy-R.jpg" alt="" className="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
-            </div>
+              <div className="relative w-full h-64 md:h-[550px] overflow-hidden transform-gpu bg-gray-900 rounded-xl shadow-lg">
+                <Image src="/img/trophy-R.jpg" alt="Trophée Time To Drive" fill className="object-cover hover:scale-110 transition-transform duration-300" />
+              </div>
 
           </div>
           <div className="p-4 md:p-8 flex flex-col justify-center items-center gap-4 md:gap-6">
@@ -59,9 +64,9 @@ export default function Home() {
           </div>
 
           <div className="flex gap-6 justify-center items-center bg-black p-2 md:p-6">
-            <div className="relative w-full h-64 md:h-[550px] overflow-hidden transform-gpu bg-gray-900 rounded-xl shadow-lg">
-              <img src="/img/depotVenteHeader.jpg" alt="" className="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
-            </div>
+              <div className="relative w-full h-64 md:h-[550px] overflow-hidden transform-gpu bg-gray-900 rounded-xl shadow-lg">
+                <Image src="/img/depotVenteHeader.jpg" alt="Voiture en stock - Time To Drive" fill className="object-cover hover:scale-110 transition-transform duration-300" />
+              </div>
           </div>
 
         </div>
