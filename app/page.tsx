@@ -111,8 +111,8 @@ export default function Home() {
           </div>
           <div className="w-full md:w-1/2 p-4 md:p-10">
             <h2 className="text-2xl md:text-3xl text-white">Nos Horaires</h2>
-            <p className="text-white text-base md:text-xl mt-4">Lundi - Vendredi : 10h00 - 18h00</p>
-            <p className="text-white text-base md:text-xl mt-4">Samedi : 10h00 - 16h00</p>
+            <p className="text-white text-base md:text-xl mt-4">Lundi - Samedi : 10h00 - 13H / 14 - 18h</p>
+            <p className="text-white text-base md:text-xl mt-4">Sur rendez-vous <strong className="text-red-500">UNIQUEMENT</strong></p>
             <p className="text-white text-base md:text-xl mt-4">Dimanche : Fermé</p>
           </div>
         </div>

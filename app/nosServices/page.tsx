@@ -51,7 +51,8 @@ export default function nosServices(){
 
                     <section className="w-full py-8 bg-black">
                         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 w-full p-5">
-                            
+
+                            {/* Pair 1: Alpine image -> Reprise text */}
                             <div className="flex gap-6 justify-center items-center p-2">
                                 <div className="relative w-full h-40 md:h-[420px] overflow-hidden bg-gray-900 rounded-xl shadow-lg">
                                     <Image src="/img/alpineVert.jpg" alt="Alpine verte - Time To Drive" fill className="object-cover hover:scale-110 transition-transform duration-300" />
@@ -68,6 +69,12 @@ export default function nosServices(){
                                 </p>
                             </div>
 
+                            {/* Pair 2: Depot1 image -> Vente text */}
+                            <div className="flex gap-6 justify-center items-center p-2">
+                                <div className="relative w-full h-40 md:h-[420px] overflow-hidden bg-gray-900 rounded-xl shadow-lg">
+                                    <Image src="/img/depot1.jpg" alt="Véhicule en présentation - Time To Drive" fill className="object-cover hover:scale-110 transition-transform duration-300" />
+                                </div>
+                            </div>
                             <div className="p-6 flex flex-col justify-center items-start gap-4">
                                 <h2 className="text-white text-2xl md:text-4xl font-semibold">Vente</h2>
                                 <p className="text-sm md:text-base text-white w-full">
@@ -79,12 +86,7 @@ export default function nosServices(){
                                 </p>
                             </div>
 
-                            <div className="flex gap-6 justify-center items-center p-2">
-                                <div className="relative w-full h-40 md:h-[420px] overflow-hidden bg-gray-900 rounded-xl shadow-lg">
-                                    <Image src="/img/depot1.jpg" alt="Véhicule en présentation - Time To Drive" fill className="object-cover hover:scale-110 transition-transform duration-300" />
-                                </div>
-                            </div>
-
+                            {/* Pair 3: Mini image -> Recherche text */}
                             <div className="flex gap-6 justify-center items-center p-2">
                                 <div className="relative w-full h-40 md:h-[420px] overflow-hidden bg-gray-900 rounded-xl shadow-lg">
                                     <Image src="/img/miniVert.jpg" alt="Mini Cooper verte - Time To Drive" fill className="object-cover hover:scale-110 transition-transform duration-300" />
@@ -100,7 +102,12 @@ export default function nosServices(){
                                 </p>
                             </div>
 
-
+                            {/* Pair 4: DepotVenteHeader image -> Covering text */}
+                            <div className="flex gap-6 justify-center items-center p-2">
+                                <div className="relative w-full h-40 md:h-[420px] overflow-hidden bg-gray-900 rounded-xl shadow-lg">
+                                    <Image src="/img/depotVenteHeader.jpg" alt="Voiture en dépôt-vente - Time To Drive" fill className="object-cover hover:scale-110 transition-transform duration-300" />
+                                </div>
+                            </div>
                             <div className="p-6 flex flex-col justify-center items-start gap-4">
                                 <h2 className="text-white text-2xl md:text-4xl font-semibold">Covering / PPF</h2>
                                 <p className="text-sm md:text-base text-white w-full">
@@ -109,11 +116,6 @@ export default function nosServices(){
                                     Finition mate, brillante, satinée ou carbone — personnalisez votre véhicule selon vos envies, avec un résultat professionnel et durable.
                                     Contactez-nous pour être mis en relation avec CoverStyle et profitez d’un accompagnement sur mesure.
                                 </p>
-                            </div>
-                            <div className="flex gap-6 justify-center items-center p-2">
-                                <div className="relative w-full h-40 md:h-[420px] overflow-hidden bg-gray-900 rounded-xl shadow-lg">
-                                    <Image src="/img/depotVenteHeader.jpg" alt="Voiture en dépôt-vente - Time To Drive" fill className="object-cover hover:scale-110 transition-transform duration-300" />
-                                </div>
                             </div>
 
                         </div>

@@ -1,0 +1,16 @@
+# Ensure index.html is served for directories
+DirectoryIndex index.html
+
+# Disable directory listings
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # If the request is not a file or directory, fallback to index.html
+  # This helps single-page apps and ensures pretty URLs work on hosts
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ /index.html [L]
+</IfModule>
